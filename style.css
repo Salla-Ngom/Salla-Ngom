@@ -22,19 +22,14 @@
     margin: 0 auto 10px; /* Centre l'image horizontalement et ajoute une marge en dessous */
   }
 
-  .photo h2,
-  .photo h1 {
+  .photo h2{
     margin: 5px 0; /* Réduit la marge autour des éléments */
+  }
+  .photo h1 {
+  	margin-top :20px;
   }
 
   /* Place le h1 au-dessus de l'image et le h2 en dessous de l'image */
-  .photo h1 {
-    order: -1; /* Place le h1 avant les autres éléments */
-  }
-
-  .photo h2 {
-    order: 1; /* Place le h2 après les autres éléments */
-  }
 
   .PARCOURS,
   .SERVICES,
