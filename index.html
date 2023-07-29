@@ -131,19 +131,16 @@
     <script>
          function ajusterPourPetitEcran() {
             const photo = document.querySelector('.photo');
-            const h1 = photo.querySelector('h1');
             const h2 = photo.querySelector('h2');
 
             if (window.innerWidth <= 768) {
-                // Placer le h1 au-dessus de l'image
-                photo.insertBefore(h1, photo.firstChild);
-
-                // Placer le h2 en dessous de l'image
-                photo.appendChild(h2);
+                // Supprimer le h2 pour les petits écrans
+                photo.removeChild(h2);
             } else {
-                // Rétablir l'ordre initial pour les écrans plus grands
-                photo.appendChild(h1);
-                photo.insertBefore(h2, photo.firstChild);
+                // Rétablir le h2 pour les écrans plus grands (si besoin)
+                // Par exemple, on peut le réinsérer à sa position initiale
+                // en utilisant la méthode insertBefore().
+                // photo.insertBefore(h2, photo.firstChild);
             }
         }
 
