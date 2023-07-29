@@ -18,11 +18,22 @@
 
   .photo img {
     width: 80%; /* Ajuste la largeur de l'image pour qu'elle s'adapte à l'écran */
+    display: block; /* Place l'image comme un bloc pour pouvoir ajuster les marges */
+    margin: 0 auto 10px; /* Centre l'image horizontalement et ajoute une marge en dessous */
   }
 
   .photo h2,
   .photo h1 {
     margin: 5px 0; /* Réduit la marge autour des éléments */
+  }
+
+  /* Place le h1 au-dessus de l'image et le h2 en dessous de l'image */
+  .photo h1 {
+    order: -1; /* Place le h1 avant les autres éléments */
+  }
+
+  .photo h2 {
+    order: 1; /* Place le h2 après les autres éléments */
   }
 
   .PARCOURS,
