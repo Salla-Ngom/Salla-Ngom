@@ -26,6 +26,9 @@
   .photo h1 {
     margin: 5px 0; /* Réduit la marge autour des éléments */
   }
+  .photo h1{
+  	margin-top: -15%;
+  }
 
   /* Place le h1 au-dessus de l'image et le h2 en dessous de l'image */
 
