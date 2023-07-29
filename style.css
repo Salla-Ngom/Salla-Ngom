@@ -1,111 +1,59 @@
 /* Styles pour les smartphones */
+/* Styles pour les écrans ayant une largeur maximale de 768 pixels (smartphones en mode portrait) */
 @media screen and (max-width: 768px) {
-  /* Styles généraux */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Place les styles pour les smartphones ici */
+
+  /* Exemples d'ajustements pour une meilleure responsivité */
+  header {
+    padding: 5px; /* Réduit l'espace autour de l'en-tête */
+  }
+
+  h1.barre-verticale {
+    font-size: 18px; /* Réduit la taille du texte de la barre verticale */
+  }
+
+  .photo {
+    text-align: center;
+  }
+
+  .photo img {
+    width: 80%; /* Ajuste la largeur de l'image pour qu'elle s'adapte à l'écran */
+  }
+
+  .photo h2,
+  .photo h1 {
+    margin: 5px 0; /* Réduit la marge autour des éléments */
+  }
+
+  .PARCOURS,
+  .SERVICES,
+  .CONTACTS {
+    margin-top: 20px; /* Réduit la marge supérieure pour les sections */
+  }
+
+  .P-List,
+  .S-List,
+  .C-List {
+    width: 100%;
+    margin: 5px 0; /* Ajoute une marge entre les éléments */
+  }
+
+  .cache,
+  .cach {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .CONTACTS {
+    flex-direction: column; /* Affiche les contacts en colonne */
+  }
+
+  .C-List {
+    margin-top: 10px; /* Ajuste la marge supérieure pour les contacts */
+    width: 100%; /* Ajuste la largeur pour afficher un contact par ligne */
+  }
 }
 
-body {
-  font-family: Times, Times New Roman, serif;
-  background-color: #f0f0f0; /* Couleur de fond générale */
-}
-
-/* Styles pour le header et la barre verticale */
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-h1.barre-verticale {
-  position: relative;
-  padding-left: 15px;
-  font-size: 24px;
-  color: transparent;
-}
-
-h1.barre-verticale::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 3rem;
-  background-color: green;
-}
-
-/* Styles pour la section photo */
-.photo {
-  text-align: center;
-  padding: 20px;
-}
-
-.photo img {
-  width: 100%;
-  max-width: 400px; /* Limite la largeur de l'image pour les grands écrans */
-  border-radius: 50%;
-}
-
-.photo h2,
-.photo h1 {
-  margin: 10px 0; /* Ajoute une marge entre les éléments */
-}
-
-/* Styles pour les sections PARCOURS, SERVICES, et CONTACTS */
-section {
-  padding: 20px;
-}
-
-.PARCOURS,
-.SERVICES,
-.CONTACTS {
-  display: flex;
-  flex-wrap: wrap; /* Permet de faire passer les éléments en-dessous si l'espace horizontal est insuffisant */
-  justify-content: space-between;
-  margin-top: 30px;
-}
-
-/* Styles pour les listes de PARCOURS, COMPETENCES, et SERVICES */
-.P-List,
-.C-List,
-.S-List {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  background-color: #f0f0f0;
-  border: 2px solid;
-}
-
-/* Styles pour les liens dans les listes */
-.P-List a,
-.C-List a,
-.S-List a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-/* Styles pour les contacts */
-.C-List img {
-  width: 100px;
-  margin: 10px auto;
-}
-
-/* Style pour le footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-}
 
 
 /* Add more media queries as needed for other screen sizes */
