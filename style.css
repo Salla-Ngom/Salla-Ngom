@@ -22,11 +22,9 @@
     margin: 0 auto 10px; /* Centre l'image horizontalement et ajoute une marge en dessous */
   }
 
-  .photo h2{
-    margin: 5px 0; /* Réduit la marge autour des éléments */
-  }
+  .photo h2,
   .photo h1 {
-  	margin-top :20px;
+    margin: 5px 0; /* Réduit la marge autour des éléments */
   }
 
   /* Place le h1 au-dessus de l'image et le h2 en dessous de l'image */
