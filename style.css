@@ -29,7 +29,6 @@
   .photo h2{
   	margin-top: -15%;
   }
-
   /* Place le h1 au-dessus de l'image et le h2 en dessous de l'image */
 
   .PARCOURS,
@@ -82,7 +81,7 @@
         h1.barre-verticale {
   position: relative;
   padding-left: 15px; /* Espace pour la barre verticale */
-  font-size: 24px; /* Taille de police pour le titre h1 (ajustez selon vos besoins) */
+  font-size: 24px; /* Taille de police pour le titre h1 
   color: transparent; /* Rendre le texte transparent pour afficher les lettres multicolores */
 }
 
@@ -163,6 +162,15 @@ img{
 .photo h2{
     margin-left : 9%;
     margin-top : 19%;
+}
+.photo h2 a{
+    text-decoration : none;
+    padding : 10px;
+    color : #c59dfa;
+    transition : background-color 0.3s ease;
+  }
+.photo h2 a:hover {
+  background-color: #08f2ff;
 }
 .photo h1{
     margin-top : -28%;
