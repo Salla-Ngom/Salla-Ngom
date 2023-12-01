@@ -70,7 +70,7 @@
         }
         body{
             font-family: Times, Times New Roman, serif;
-            /*background-image: url('1641511042678.jpg');*/
+            background-image: url('1641511042678.jpg');
             background-color: grid;
             background-size : cover;
         }
@@ -158,10 +158,24 @@ img{
 }
 .photo {
     margin-top : 2%;
+    height: calc(100vh-81.6px);
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .photo h2{
-    margin-left : 9%;
-    margin-top : 19%;
+    margin-left : 100px;
+  padding: 12px 25px;
+  background-color: black;
+  border: 3px solid #ed5565;
+  color: #ed5565;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  display: inline-block;
+  border-radius: 20px;
 }
 .photo h2 a{
     text-decoration : none;
@@ -170,20 +184,52 @@ img{
     transition : background-color 0.3s ease;
   }
 .photo h2 a:hover {
-  background-color: #08f2ff;
+  color: rgb(64, 250, 104);
+}
+.photo h2 a:before {
+  content: "";
+  background-color: #ed5565;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 0%;
+  z-index: -1;
+  transition: 0.4s;
 }
 .photo h1{
-    margin-top : -28%;
+    margin-top: 100px;
     justify-content : center;
     text-align : center;
     display : block;
-    margin-left : 35%;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    cursor: context-menu;
+}
+.photo h1 span{
+	display: inline-block;
+}
+.photo h1 span:hover{
+	color: rgb(14, 255, 54);
+	transition: all 0.5s;
+}
+span.name {
+  color: #ed5565;
+}
+.photo p{
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  font-size: 0.8rem;
+  margin-left : 0%;
+  color: green;
+  width: 100%;
+  font-size: 2rem;
 }
 /*.texte{
     margin-top : 3%;
 }*/
 #parcours{
-    margin-top : 0%;
+    margin-top : 3%;
     text-align : center;
 }
 #parcours p h1{
@@ -194,9 +240,8 @@ img{
     margin-right : 25%;
 }
 .PARCOURS{
-    background-color : #f0f0f0;
     padding : 20px;
-    top : 0;
+    top : 3%;
     display : flex;
     justify-content : space-between;
     max-width : 12000px;
@@ -205,7 +250,6 @@ img{
     background-size : cover;
 }
 .SERVICES{
-    background-color : #f0f0f0;
     padding : 20px;
     top : 0;
     display : flex;
@@ -217,7 +261,6 @@ img{
     margin-top : 0px;
 }
 .CONTACTS{
-    background-color : #f0f0f0;
     padding : 20px;
     top : 0;
     display : flex;
@@ -251,6 +294,55 @@ img{
     width : 15px;
     margin-top: 150px;
 }
+.html {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: content;
+  margin-bottom: 40px;
+}
+.progressbar {
+  position: relative;
+  width: 600px;
+  height: 20px;
+  border: 2px solid #ed5565;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+div[class^="bar-"] {
+  position: absolute;
+  background-color: #48cfad;
+  height: 10px;
+  border-radius: 20px;
+  margin: 2.7px;
+}
+
+.bar-html,
+.bar-css,
+.bar-javascript,
+.bar-react {
+  width: calc(a - 6px);
+}
+div[class^="tag-"] {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+  width: 120px;
+  background-color: rgb(22, 25, 26);
+  margin-right: 50px;
+  text-align: center;
+  color: #43fc2a;
+  padding: 12px;
+}
+
+div[class^="tag-"]p {
+  color: antiquewhite;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  padding-top: 3px;
+}
+.C-List h1{
+   color: #fff;
+}
 .C-List img{
     width : 100px;
 }
@@ -276,7 +368,6 @@ footer {
 }
 .cache li{
     margin-left : 10%;
-    background-color : #f0f0f0;
     list-style-type: none;
     border: 2px solid;
 
@@ -286,7 +377,6 @@ footer {
 }
 .cach li{
     margin-left : 5%;
-    background-color : #f0f0f0;
     list-style-type: none;
     border: 2px solid;
 
@@ -302,6 +392,7 @@ footer {
 }
 .list{
 	text-align : center;
+	margin-top: 12%;
 }
 .parc{
     margin-top: 15x;
@@ -345,7 +436,6 @@ footer {
     display : block;
 }
 .COMPETENCES{
-    background-color : #f0f0f0;
     padding : 20px;
     top : 0;
     display : flex;
