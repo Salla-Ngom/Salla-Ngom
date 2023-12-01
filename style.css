@@ -306,7 +306,7 @@ span.name {
   height: 20px;
   border: 2px solid #ed5565;
   border-radius: 20px;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 10px;
 }
 div[class^="bar-"] {
@@ -317,11 +317,21 @@ div[class^="bar-"] {
   margin: 2.7px;
 }
 
-.bar-html,
-.bar-css,
-.bar-javascript,
-.bar-react {
-  width: calc(a - 6px);
+.bar-html
+{
+  width: calc(95% - 6px);
+}
+.bar-java
+{
+  width: calc(80% - 6px);
+}
+.bar-laravel
+{
+  width: calc(85% - 6px);
+}
+.bar-php
+{
+  width: calc(90% - 6px);
 }
 div[class^="tag-"] {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
@@ -382,17 +392,24 @@ footer {
 
 }
 .cach{
+       height: 25px;
 	margin-top : 0px;
 	margin-left : 10%;
-    margin-right: 20%;
+        margin-right: 20%;
 }
 .comp{
 	margin-left : 10%;
-    margin-right: 20%;
+        margin-right: 20%;
 }
 .list{
+        margin-left: 45%;
+        margin-right: 40%;
 	text-align : center;
 	margin-top: 12%;
+        background-color: #ed5565;
+}
+.list p{
+ margin-right: 35%;
 }
 .parc{
     margin-top: 15x;
@@ -435,6 +452,9 @@ footer {
 .S-List:hover .bureau{
     display : block;
 }
+.COMPETENCES li{
+	list-style-type: none;
+}
 .COMPETENCES{
     padding : 20px;
     top : 0;
@@ -443,4 +463,20 @@ footer {
     max-width : 12000px;
     background-size : cover;
     margin-top : 0px;
+}
+.projects{
+     display : flex;
+    justify-content : space-between;
+    margin-top : 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.projects h1 p{
+ color : green;
+ margin-left: 5px;
+ margin-right: 5px;
+}
+.projects h1{
+        border: 1px solid black;
+	background-color: rgb(22, 25, 26);
 }
