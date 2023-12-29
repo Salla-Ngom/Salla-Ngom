@@ -1,9 +1,8 @@
 /* Styles pour les smartphones */
 /* Styles pour les écrans ayant une largeur maximale de 768 pixels (smartphones en mode portrait) */
 @media screen and (max-width: 768px) {
-  /* Place les styles pour les smartphones ici */
+  /*les styles pour les smartphones ici*/
 
-  /* Exemples d'ajustements pour une meilleure responsivité */
   header {
     padding: 5px; /* Réduit l'espace autour de l'en-tête */
   }
@@ -14,12 +13,14 @@
 
   .photo {
     text-align: center;
+    height: 100%;
   }
 
   .photo img {
     width: 80%; /* Ajuste la largeur de l'image pour qu'elle s'adapte à l'écran */
     display: block; /* Place l'image comme un bloc pour pouvoir ajuster les marges */
     margin: 0 auto 10px; /* Centre l'image horizontalement et ajoute une marge en dessous */
+    align-items: center;
   }
 
   .photo h2,
@@ -77,6 +78,7 @@
         section{
             background-image: url('test.jpg');
             background-size : cover;
+            height: 100%;
         }
         h1.barre-verticale {
   position: relative;
@@ -306,7 +308,7 @@ span.name {
   height: 20px;
   border: 2px solid #ed5565;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 10px;
 }
 div[class^="bar-"] {
@@ -314,7 +316,8 @@ div[class^="bar-"] {
   background-color: #48cfad;
   height: 10px;
   border-radius: 20px;
-  margin: 2.7px;
+  margin-left: 6px;
+  margin-top: 5px;
 }
 
 .bar-html
@@ -389,24 +392,25 @@ footer {
     margin-left : 5%;
     list-style-type: none;
     border: 2px solid;
+    text-align: center;
 
 }
 .cach{
-       height: 25px;
+    height: 25px;
 	margin-top : 0px;
 	margin-left : 10%;
-        margin-right: 20%;
+    margin-right: 20%;
 }
 .comp{
 	margin-left : 10%;
-        margin-right: 20%;
+    margin-right: 20%;
 }
 .list{
-        margin-left: 45%;
-        margin-right: 40%;
+    margin-left: 45%;
+    margin-right: 40%;
 	text-align : center;
 	margin-top: 12%;
-        background-color: #ed5565;
+    background-color: #ed5565;
 }
 .list p{
  margin-right: 35%;
